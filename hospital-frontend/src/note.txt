@@ -1,0 +1,33 @@
+hospital-booking-system/
+├── backend/
+│   ├── .env                        # PORT and MONGO_URI
+│   ├── package.json                # ES module ("type": "module"), Express, Mongoose, etc.
+│   └── src/
+│       ├── server.js               # Express app entry point & route mounting
+│       ├── config/
+│       │   └── db.js               # Database connection logic
+│       ├── models/
+│       │   ├── Doctor.js           # Doctor schema & available time slots
+│       │   ├── Patient.js          # Patient contact & profile schema
+│       │   └── Appointment.js      # Booking schema & double-booking index 
+│       ├── controllers/
+│       │   ├── doctorController.js     # Fetch & create doctors
+│       │   └── appointmentController.js# Book, list & cancel appointments
+│       └── routes/
+│           ├── doctorRoutes.js         # /api/doctors endpoints
+│           └── appointmentRoutes.js    # /api/appointments endpoints
+└── frontend/
+    ├── package.json                # Vite + React dependencies
+    └── src/
+        ├── App.jsx                 # Main layout / page routing
+        ├── components/             # Reusable UI pieces (navbar, cards, forms)
+        ├── pages/                  # Full screens (booking page, dashboard, login)
+        ├── services/               # API request helpers (fetching doctors, booking)
+        └── data/                   # Static lists (departments, time slots)
+
+
+
+
+
+
+        s
